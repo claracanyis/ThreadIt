@@ -14,7 +14,7 @@ h1 {
     font-size: 5.5rem;
     text-transform: uppercase;
     font-family: "Short Stack", 'Times New Roman', Times, serif;
-    padding-left: 20px;
+    margin: 0 20px;
 }
 
 h2 {
@@ -45,7 +45,7 @@ nav {
 }
 
 nav ul {
-    padding-right: 30px;
+    margin: 0 30px;
 }
 
 nav li {
@@ -110,6 +110,15 @@ strong {
         position: relative;
         width: 100%;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    nav ul {
+        margin: 0;
+    }
+    nav li {
+        font-size: 1.2rem;
     }
 }
 
