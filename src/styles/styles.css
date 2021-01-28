@@ -7,26 +7,34 @@
 html {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 16px;
-    background-color: #808080;
+    background-color: #FFFFFF;
 }
 
 h1 {
-    font-size: 5.5rem;
-    font-family: "Short Stack", 'Times New Roman', Times, serif;
-    margin: 0 20px;
+    font-size: 2.5rem;
+    font-family: "Parisienne", 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    display: inline-block;
+    background-image: linear-gradient(130deg, #7e6d94 0%, #d16985 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     width: 100%;
     text-align: center;
     margin: 30px auto;
-    font-family: "Short Stack", 'Times New Roman', Times, serif;
-
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:#494949;
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color:#000000;
+    font-weight: lighter;
 }
 
 img {
@@ -37,21 +45,25 @@ img {
 
 /* ----- Header ----- */
 nav {
+    width: 100%;
+    height: 80px;
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 15px;
 }
 
 nav ul {
     margin: 0 30px;
+    position: relative;
+    float: right;
+    display: inline-block;
 }
 
 nav li {
     display: inline-block;
     list-style-type: none;
-    padding: 20px 10px;
-    font-size: 1.5rem;
+    padding: 10px 10px;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -69,9 +81,11 @@ nav a:hover {
 
 strong {
     font-weight: bold;
-    font-style: italic;
     font-size: 2.6rem;
-    color: #cc7fa1;
+    background-image: linear-gradient(130deg, #7e6d94 0%, #d16985 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Parisienne", 'Times New Roman', Times, serif;
 }
 
 .banner img {
@@ -85,7 +99,7 @@ strong {
     top: 50%;
     right: 0;
     width: 40%;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 20px;
     background-color: #FFFFFF;
 }
@@ -130,26 +144,27 @@ section {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* Products */
-
 .product {
-    background-color: #EEEEEE;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.32);
-    margin: 20px;
+    background-color: #ffffff;
     min-width: 250px;
     max-width: 30%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-items: center;
 }
 
+.product:hover {
+    filter: opacity(80%)
+}
+
 .product img {
-    width: 80%;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     margin: 20px auto 10px auto;
 }
@@ -160,36 +175,39 @@ section {
     text-align: center;
 }
 
-@media only screen and (max-width: 1300px) {
-    .product img {
-        height: 170px;
-    }
-}
-
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 400px) {
     .product {
-        max-width: 80%;
-    }
-
-    .product img {
-        height: 240px;
+        min-width: 80%;
     }
 }
+
+@media only screen and (min-width: 1900px) {
+    .product {
+        max-width: 640px;
+    }
+}
+
 
 /* Team */
 .team {
-    background-color: #EEEEEE;
+    background-color: #f3d9e5;
 
 }
 
 .person {
-    background-color: #e6c1d1;
+    background-color: #f3d9e5;
     margin: 10px;
     flex: 1 1 0;
     min-width: 220px;
     max-width: 25%;
-    border-radius: 8px;
-    padding: 10px;
+    text-align: center;
+}
+
+.person img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .person h3, .person p {
@@ -204,17 +222,36 @@ section {
     text-align: center;
 }
 
+h2 > img {
+    width: 50px;
+    height: auto;
+    display: inline;
+    margin: 0 10px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact h2 {
+    font-family: "Parisienne", 'Times New Roman', Times, serif;
+    background-image: linear-gradient(130deg, #7e6d94 0%, #d16985 74%);
+    text-transform: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .contact a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #7e6d94;
     font-size: 1.2rem;
 }
 
 .contact a:hover {
-    color: #acc1e3;
-    font-size: 1.3rem;
+    color: #d16985;
 }
 
 /* ----- Footer ----- */
