@@ -16,6 +16,7 @@ h1 {
     margin: 0 auto;
     display: inline-block;
     background-image: linear-gradient(130deg, #7e6d94 0%, #d16985 74%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -63,7 +64,7 @@ nav ul {
     margin: 0 30px;
     position: relative;
     float: right;
-    display: inline-block;
+    display: inline;
 }
 
 nav li {
@@ -90,6 +91,7 @@ strong {
     font-weight: bold;
     font-size: 2.6rem;
     background-image: linear-gradient(130deg, #7e6d94 0%, #d16985 74%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Parisienne", 'Times New Roman', Times, serif;
@@ -245,6 +247,7 @@ h2 > img {
     font-family: "Parisienne", 'Times New Roman', Times, serif;
     background-image: linear-gradient(130deg, #7e6d94 0%, #d16985 74%);
     text-transform: none;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
