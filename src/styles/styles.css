@@ -20,6 +20,13 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h1 > img {
+    width: 40px;
+    height: auto;
+    display: inline;
+    margin: 0 20px;
+}
+
 h2 {
     font-size: 2.5rem;
     width: 100%;
