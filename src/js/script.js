@@ -21,14 +21,14 @@ function displayPreviousImage() {
 
 function changeImage(x) {
     banner.src = images[x];
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove("dot--active");
-    } 
+    dots.forEach(element => {
+        element.classList.remove("dot--active");
+    });
     dots[x].classList.add("dot--active");
 }
 
 function startTimer() {
-    setInterval(displayNextImage, 6000);
+    setInterval(displayNextImage, 4000);
 }
 
 // Event listeners
